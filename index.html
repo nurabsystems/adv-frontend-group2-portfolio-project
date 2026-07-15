@@ -58,7 +58,7 @@
     <!-- ==========================================
         CUSTOM CSS
     =========================================== -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -605,223 +605,149 @@
       </section>
 
       <!-- ==========================================
-                FEATURED PROJECTS
-        =========================================== -->
+        FEATURED PROJECTS
+=========================================== -->
 
-      <section id="projects" class="py-5 bg-light">
-        <div class="container">
-          <div class="row mb-5">
+<section id="projects" class="py-5 bg-light">
+    <div class="container">
+        <div class="row mb-5">
             <div class="col-lg-8 mx-auto text-center">
-              <span class="text-primary fw-semibold text-uppercase">
-                Portfolio
-              </span>
-
-              <h2 class="display-6 fw-bold mt-2">Featured Projects</h2>
-
-              <p class="text-muted">
-                A showcase of projects demonstrating our technical expertise,
-                creativity and collaborative development approach.
-              </p>
+                <span class="text-primary fw-semibold text-uppercase">Portfolio</span>
+                <h2 class="display-6 fw-bold mt-2">Featured Projects</h2>
+                <p class="text-muted">A showcase of projects demonstrating our technical expertise, creativity and collaborative development approach.</p>
             </div>
-          </div>
-
-          <div class="row g-4">
-            <!-- PROJECT 1 -->
-
-            <div class="col-lg-4 col-md-6">
-              <div class="card project-card shadow-sm border-0 h-100">
-                <img
-                  src="images/projects/project1.jpg"
-                  class="card-img-top"
-                  alt="Project One"
-                />
-
-                <div class="card-body">
-                  <span class="badge bg-primary mb-3"> Web Application </span>
-
-                  <h4>Smart Business Dashboard</h4>
-
-                  <p class="text-muted">
-                    Responsive business dashboard designed with Bootstrap and
-                    JavaScript to visualize business analytics.
-                  </p>
-                </div>
-
-                <div class="card-footer bg-white border-0 pb-4">
-                  <a href="#" class="btn btn-primary btn-sm">
-                    <i class="bi bi-github"></i>
-
-                    GitHub
-                  </a>
-
-                  <a href="#" class="btn btn-outline-primary btn-sm">
-                    <i class="bi bi-box-arrow-up-right"></i>
-
-                    Live Demo
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- PROJECT 2 -->
-
-            <div class="col-lg-4 col-md-6">
-              <div class="card project-card shadow-sm border-0 h-100">
-                <img
-                  src="images/projects/project2.jpg"
-                  class="card-img-top"
-                  alt="Project Two"
-                />
-
-                <div class="card-body">
-                  <span class="badge bg-success mb-3"> Portfolio Website </span>
-
-                  <h4>Creative Agency Website</h4>
-
-                  <p class="text-muted">
-                    Modern portfolio website featuring responsive layouts,
-                    animations and optimized performance.
-                  </p>
-                </div>
-
-                <div class="card-footer bg-white border-0 pb-4">
-                  <a href="#" class="btn btn-primary btn-sm">
-                    <i class="bi bi-github"></i>
-
-                    GitHub
-                  </a>
-
-                  <a href="#" class="btn btn-outline-primary btn-sm">
-                    <i class="bi bi-box-arrow-up-right"></i>
-
-                    Live Demo
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- PROJECT 3 -->
-
-            <div class="col-lg-4 col-md-6">
-              <div class="card project-card shadow-sm border-0 h-100">
-                <img
-                  src="images/projects/project3.jpg"
-                  class="card-img-top"
-                  alt="Project Three"
-                />
-
-                <div class="card-body">
-                  <span class="badge bg-warning text-dark mb-3">
-                    Team Project
-                  </span>
-
-                  <h4>E-Commerce Platform</h4>
-
-                  <p class="text-muted">
-                    Responsive shopping platform with Bootstrap, JavaScript and
-                    clean user experience.
-                  </p>
-                </div>
-
-                <div class="card-footer bg-white border-0 pb-4">
-                  <a href="#" class="btn btn-primary btn-sm">
-                    <i class="bi bi-github"></i>
-
-                    GitHub
-                  </a>
-
-                  <a href="#" class="btn btn-outline-primary btn-sm">
-                    <i class="bi bi-box-arrow-up-right"></i>
-
-                    Live Demo
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
+
+        <div class="project-grid-custom">
+
+            <div class="project-card-custom">
+                 <div class="project-img placeholder-img" style="border-bottom: 3px solid rgba(0, 0, 0, 0.08); margin-bottom: 20px; overflow: hidden;">
+                <img src="portfolio.png" alt="Portfolio Website" style="width:100%;height:100%;object-fit:cover;">
+                </div>
+                <div class="project-info-custom">
+                    <span class="project-tag-custom">HTML / CSS / JS</span>
+                    <h3>Portfolio Website</h3>
+                    <p>Modern responsive portfolio with dark/light mode, smooth animations and scroll effects.</p>
+                    <div class="project-links-custom">
+                        <a href="https://zavirah.github.io/portfolio/" target="_blank" class="btn-sm-custom">Live <i class="bi bi-arrow-up-right-square"></i></a>
+                        <a href="https://github.com/zavirah/portfolio" target="_blank" class="btn-sm-custom outline-custom" >Code <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-custom">
+                <div class="project-img placeholder-img" style="border-bottom: 3px solid rgba(0, 0, 0, 0.08); margin-bottom: 20px; overflow: hidden;">
+                <img src="quiz.png" alt="Quiz App" style="width:100%;height:100%;object-fit:cover;">
+                </div>
+                <div class="project-info-custom">
+                    <span class="project-tag-custom">JavaScript</span>
+                    <h3>Quiz App</h3>
+                    <p>Interactive quiz app with score tracking, countdown timer and smooth animations.</p>
+                    <div class="project-links-custom">
+                        <a href="https://zavirah.github.io/quiz-app/" target="_blank" class="btn-sm-custom">Live <i class="bi bi-arrow-up-right-square"></i></a>
+                        <a href="https://github.com/zavirah/quiz-app" target="_blank" class="btn-sm-custom outline-custom">Code <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-custom">
+                <div class="project-img placeholder-img" style="border-bottom: 3px solid rgba(0, 0, 0, 0.08); margin-bottom: 20px; overflow: hidden;">
+                <img src="maeva.png" alt="MAEVA Fashion Store" style="width:100%;height:100%;object-fit:cover;">
+                </div>
+                <div class="project-info-custom">
+                    <span class="project-tag-custom">Bootstrap 5</span>
+                    <h3>MAEVA Fashion Store</h3>
+                    <p>Luxury fashion e-commerce landing page with product grid, marquee & newsletter CTA.</p>
+                    <div class="project-links-custom">
+                        <a href="https://zavirah.github.io/maeva/" target="_blank" class="btn-sm-custom">Live <i class="bi bi-arrow-up-right-square"></i></a>
+                        <a href="https://github.com/zavirah/maeva" target="_blank" class="btn-sm-custom outline-custom">Code <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-custom">
+                <div class="project-img placeholder-img" style="border-bottom: 3px solid rgba(0, 0, 0, 0.08); margin-bottom: 20px; overflow: hidden;">
+                    <img src="muse.png" alt="Muse Landing Page" style="width:100%;height:100%;object-fit:cover;">
+                </div>
+                <div class="project-info-custom">
+                    <span class="project-tag-custom">HTML / CSS</span>
+                    <h3>Muse Landing Page</h3>
+                    <p>Clean editorial landing page inspired by Medium — focused on readability and layout.</p>
+                    <div class="project-links-custom">
+                        <a href="https://zavirah.github.io/muse/" target="_blank" class="btn-sm-custom">Live <i class="bi bi-arrow-up-right-square"></i></a>
+                        <a href="https://github.com/zavirah/muse" target="_blank" class="btn-sm-custom outline-custom">Code <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+          
+
+          
 
       <!-- ==========================================
-                TECHNOLOGY STACK
-        =========================================== -->
+        TECHNOLOGY STACK
+=========================================== -->
 
-      <section id="technology" class="py-5">
-        <div class="container">
-          <div class="row mb-5 text-center">
+<section id="technology" class="py-5">
+    <div class="container">
+        <div class="row mb-5 text-center">
             <div class="col-lg-8 mx-auto">
-              <span class="text-primary fw-semibold text-uppercase">
-                Technologies
-              </span>
-
-              <h2 class="display-6 fw-bold mt-2">Our Technology Stack</h2>
-
-              <p class="text-muted">
-                We leverage industry-standard tools and technologies to develop
-                secure, responsive and scalable digital solutions.
-              </p>
+                <span class="text-primary fw-semibold text-uppercase">Technologies</span>
+                <h2 class="display-6 fw-bold mt-2">Our Technology Stack</h2>
+                <p class="text-muted">We leverage industry-standard tools and technologies to develop secure, responsive and scalable digital solutions.</p>
             </div>
-          </div>
-
-          <div class="row g-4 text-center">
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="tech-box shadow-sm p-4 rounded">
-                <i class="bi bi-filetype-html display-4 text-danger"></i>
-                <h5 class="mt-3">HTML5</h5>
-              </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="tech-box shadow-sm p-4 rounded">
-                <i class="bi bi-filetype-css display-4 text-primary"></i>
-                <h5 class="mt-3">CSS3</h5>
-              </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="tech-box shadow-sm p-4 rounded">
-                <i class="bi bi-bootstrap-fill display-4 text-purple"></i>
-                <h5 class="mt-3">Bootstrap</h5>
-              </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="tech-box shadow-sm p-4 rounded">
-                <i class="bi bi-filetype-js display-4 text-warning"></i>
-                <h5 class="mt-3">JavaScript</h5>
-              </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="tech-box shadow-sm p-4 rounded">
-                <i class="bi bi-git display-4 text-danger"></i>
-                <h5 class="mt-3">Git</h5>
-              </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="tech-box shadow-sm p-4 rounded">
-                <i class="bi bi-github display-4"></i>
-                <h5 class="mt-3">GitHub</h5>
-              </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="tech-box shadow-sm p-4 rounded">
-                <i class="bi bi-window display-4 text-info"></i>
-                <h5 class="mt-3">VS Code</h5>
-              </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="tech-box shadow-sm p-4 rounded">
-                <i class="bi bi-server display-4 text-success"></i>
-                <h5 class="mt-3">Responsive Design</h5>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
+
+        <div class="skills-container-custom">
+
+            <div class="skill-card-custom">
+                <i class="bi bi-filetype-html"></i>
+                <span>HTML5</span>
+            </div>
+
+            <div class="skill-card-custom">
+                <i class="bi bi-filetype-css"></i>
+                <span>CSS3</span>
+            </div>
+
+            <div class="skill-card-custom">
+                <i class="bi bi-filetype-js"></i>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="skill-card-custom">
+                <i class="bi bi-bootstrap-fill"></i>
+                <span>Bootstrap 5</span>
+            </div>
+
+            <div class="skill-card-custom">
+                <i class="bi bi-git"></i>
+                <span>Git</span>
+            </div>
+
+            <div class="skill-card-custom">
+                <i class="bi bi-github"></i>
+                <span>GitHub</span>
+            </div>
+
+            <div class="skill-card-custom">
+                <i class="bi bi-window"></i>
+                <span>VS Code</span>
+            </div>
+
+            <div class="skill-card-custom">
+                <i class="bi bi-phone"></i>
+                <span>Responsive Design</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
       <!-- ==========================================
                 OUR TEAM
@@ -908,7 +834,7 @@
             <div class="col-lg-3 col-md-6">
               <div class="card team-card border-0 shadow-sm text-center h-100">
                 <img
-                  src="images/team/zavirah.jpg"
+                  src="profile.png"
                   class="card-img-top"
                   alt="Zavirah-photo"
                 />
@@ -916,17 +842,17 @@
                 <div class="card-body">
                   <h4>Zavirah</h4>
 
-                  <p class="text-primary">UI / UX Designer</p>
+                  <p class="text-primary">UI / UX Designer & Frontend Developer </p>
 
                   <p class="text-muted small">
-                    Designing engaging interfaces and enhancing user experience.
+                     Passionate about crafting beautiful, responsive interfaces that combine creativity with clean code to deliver exceptional user experiences.
                   </p>
                 </div>
 
                 <div class="pb-4">
-                  <a href="#"><i class="bi bi-github fs-4 me-3"></i></a>
-                  <a href="#"><i class="bi bi-linkedin fs-4 me-3"></i></a>
-                  <a href="#"><i class="bi bi-envelope fs-4"></i></a>
+                  <a href="https://github.com/zavirah" target="_blank"><i class="bi bi-github fs-4 me-3"></i></a>
+                  <a href="https://www.linkedin.com/in/zavirah-dominique-merrande-858b7128a " target="_blank"><i class="bi bi-linkedin fs-4 me-3"></i></a>
+                  <a href="mailto:dominiquemerrande@gmail.com" target="_blank"><i class="bi bi-envelope fs-4"></i></a>
                 </div>
               </div>
             </div>
@@ -963,94 +889,73 @@
         </div>
       </section>
 
-      <!-- ==========================================
-                TESTIMONIALS
-        =========================================== -->
+    <!-- ==========================================
+        TESTIMONIALS
+=========================================== -->
 
-      <section id="testimonials" class="py-5">
-        <div class="container">
-          <div class="row mb-5">
+<section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+        <div class="row mb-5">
             <div class="col-lg-8 mx-auto text-center">
-              <span class="text-primary fw-semibold text-uppercase">
-                Testimonials
-              </span>
-
-              <h2 class="display-6 fw-bold mt-2">What People Say About Us</h2>
+                <span class="text-primary fw-semibold text-uppercase">Testimonials</span>
+                <h2 class="display-6 fw-bold mt-2">What People Say About Us</h2>
             </div>
-          </div>
-
-          <div
-            id="testimonialCarousel"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="text-center">
-                  <i class="bi bi-stars display-4 text-warning"></i>
-
-                  <p class="lead my-4">
-                    "NextGen Developers delivered a modern, responsive website
-                    that exceeded our expectations."
-                  </p>
-
-                  <h5>John Smith</h5>
-
-                  <small class="text-muted"> CEO, SmartTech Ltd. </small>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="text-center">
-                  <i class="bi bi-stars display-4 text-warning"></i>
-
-                  <p class="lead my-4">
-                    "Excellent teamwork, professional communication and
-                    outstanding development quality."
-                  </p>
-
-                  <h5>Sarah Johnson</h5>
-
-                  <small class="text-muted"> Product Manager </small>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="text-center">
-                  <i class="bi bi-stars display-4 text-warning"></i>
-
-                  <p class="lead my-4">
-                    "Their collaborative approach made the project smooth,
-                    efficient and enjoyable."
-                  </p>
-
-                  <h5>Michael Brown</h5>
-
-                  <small class="text-muted"> Business Consultant </small>
-                </div>
-              </div>
-            </div>
-
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#testimonialCarousel"
-              data-bs-slide="prev"
-            >
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#testimonialCarousel"
-              data-bs-slide="next"
-            >
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
         </div>
-      </section>
+
+        <div class="testimonial-grid-custom">
+
+            <div class="testimonial-card-custom">
+                <div class="stars-custom">★★★★★</div>
+                <p>"My portfolio website was built exactly the way I imagined it. Clean, fast and very professional. The attention to detail was impressive and delivery was on time!"</p>
+                <div class="testimonial-author-custom">
+                    <img src="lucas.jpeg" alt="James Mensah" class="testimonial-avatar-custom">
+                    <div>
+                        <h4>James Mensah</h4>
+                        <span>Photographer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card-custom">
+                <div class="stars-custom">★★★★★</div>
+                <p>"The landing page for my fashion brand looks absolutely stunning. My customers keep complimenting the website. Best decision I made for my business!"</p>
+                <div class="testimonial-author-custom">
+                    <img src="sofia.jpeg" alt="Sofia Adeyemi" class="testimonial-avatar-custom">
+                    <div>
+                        <h4>Sofia Adeyemi</h4>
+                        <span>Fashion Brand Owner</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card-custom">
+                <div class="stars-custom">★★★★★</div>
+                <p>"The quiz app built for my platform was smooth, interactive and exactly what my users needed. Great communication throughout. Will definitely come back!"</p>
+                <div class="testimonial-author-custom">
+                    <img src="james.jpeg" alt="Tunde Okafor" class="testimonial-avatar-custom">
+                    <div>
+                        <h4>Tunde Okafor</h4>
+                        <span>EdTech Founder</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card-custom">
+                <div class="stars-custom">★★★★★</div>
+                <p>"I needed a clean reading platform landing page and the result was beyond expectations. Elegant design, fully responsive and loads super fast on all devices!"</p>
+                <div class="testimonial-author-custom">
+                    <img src="amara.jpeg" alt="Amara Leclerc" class="testimonial-avatar-custom">
+                    <div>
+                        <h4>Amara Leclerc</h4>
+                        <span>Content Creator</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
       <!-- ==========================================
                 CONTACT SECTION
@@ -1362,6 +1267,6 @@
             CUSTOM JAVASCRIPT
     =========================================== -->
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
