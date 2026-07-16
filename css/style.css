@@ -4053,26 +4053,6 @@ width:100%;
 }
 
 }
-<<<<<<< HEAD
-@media (max-width: 768px) {
-    .project-grid-custom,
-    .skills-container-custom,
-    .testimonial-grid-custom {
-        grid-template-columns: 1fr;
-    }
-}
-@media(max-width:768px){
-    .section-title-match{
-        font-size:2rem;
-    }
-}
-@media(max-width:768px){
-    .section-title{
-        font-size:2rem;
-    }
-=======
-
-
 
 
 
@@ -4189,6 +4169,65 @@ width:100%;
     font-size:1.4rem;
 
 }
+}
+@media (max-width: 768px) {
+    .project-grid-custom,
+    .skills-container-custom,
+    .testimonial-grid-custom {
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:768px){
+    .section-title-match{
+        font-size:2rem;
+    }
+}
+@media(max-width:768px){
+    .section-title{
+        font-size:2rem;
+    }
+}
 
->>>>>>> 6c8bee4 (remove temporary folder hide)
+body.dark-mode .text-muted,
+body.dark-mode small {
+    color: #94a3b8 !important;
+}
+
+body.dark-mode p {
+    color: #cbd5e1 !important;
+}
+body.dark-mode .bg-light {
+    background: #1e293b !important;
+    color: #fff !important;
+}
+body.dark-mode .hero-stats {
+    background: #1e293b !important;
+}
+
+body.dark-mode .stat-box h3 {
+    color: #38bdf8 !important;
+}
+
+body.dark-mode .stat-box span {
+    color: #cbd5e1 !important;
+}
+body.dark-mode .skill-card-custom {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+}
+
+body.dark-mode .skill-card-custom span {
+    color: #fff !important;
+}
+body.dark-mode .team-card {
+    background: #1e293b !important;
+}
+
+body.dark-mode .team-card .text-primary {
+    color: #38bdf8 !important;
+}
+
+body.dark-mode .team-card p,
+body.dark-mode .team-card .text-muted {
+    color: #cbd5e1 !important;
 }

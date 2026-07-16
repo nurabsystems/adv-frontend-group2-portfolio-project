@@ -66,18 +66,104 @@ This makes the project:
 
 function initializeWebsite() {
   initializeLoader();
-
   initializeNavbar();
-
   initializeActiveNavigation();
-
   initializeTechnologyCards();
-
   initializeContactForm();
-
   animateCounters();
-
   revealCustomOnScroll();
+  initializeDarkMode();
+  initializeProjectSearch();
+}
+
+function initializeDarkMode() {
+
+    const buttons = document.querySelectorAll(".theme-toggle");
+
+    if (buttons.length === 0) return;
+
+    function syncIcons(isDark) {
+
+        buttons.forEach(function (btn) {
+
+            const icon = btn.querySelector("i");
+
+            if (!icon) return;
+
+            if (isDark) {
+                icon.classList.replace("bi-brightness-high-fill", "bi-moon-stars-fill");
+            } else {
+                icon.classList.replace("bi-moon-stars-fill", "bi-brightness-high-fill");
+            }
+
+        });
+
+    }
+
+    if (localStorage.getItem("theme") === "dark") {
+
+        document.body.classList.add("dark-mode");
+
+        syncIcons(true);
+
+    }
+
+    buttons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            document.body.classList.toggle("dark-mode");
+
+            const isDark = document.body.classList.contains("dark-mode");
+
+            syncIcons(isDark);
+
+            localStorage.setItem("theme", isDark ? "dark" : "light");
+
+        });
+
+    });
+
+}
+
+function initializeProjectSearch(){
+
+    const search=document.getElementById("projectSearch");
+
+    if(!search) return;
+
+    const cards=document.querySelectorAll(".project-card-custom");
+
+    const noProjects=document.getElementById("noProjects");
+
+    search.addEventListener("input",function(){
+
+        const value=this.value.toLowerCase();
+
+        let found=false;
+
+        cards.forEach(card=>{
+
+            const text=card.innerText.toLowerCase();
+
+            if(text.includes(value)){
+
+                card.style.display="block";
+
+                found=true;
+
+            }else{
+
+                card.style.display="none";
+
+            }
+
+        });
+
+        noProjects.style.display=found?"none":"block";
+
+    });
+
 }
 
 /*FUNCTIONS*/
