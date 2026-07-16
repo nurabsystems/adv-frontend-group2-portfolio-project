@@ -3581,6 +3581,369 @@ transition-delay:.7s;
 
 }
 
+
+
+/*==========================================================
+                    CONTACT SECTION
+==========================================================*/
+
+#contact{
+    position:relative;
+    overflow:hidden;
+    background:linear-gradient(180deg,#f8fbff 0%,#ffffff 100%);
+}
+
+/* Decorative background */
+
+#contact::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    background:rgba(13,110,253,.08);
+
+    top:-120px;
+
+    right:-100px;
+
+    filter:blur(5px);
+
+}
+
+#contact::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+
+    height:250px;
+
+    border-radius:50%;
+
+    background:rgba(25,135,84,.08);
+
+    bottom:-100px;
+
+    left:-80px;
+
+}
+
+/*==========================================================
+                    CONTACT CARDS
+==========================================================*/
+
+#contact .card{
+
+    border:none;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    background:#fff;
+
+}
+
+#contact .card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 45px rgba(0,0,0,.15);
+
+}
+
+.contact-icon{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#0d6efd,#5aa3ff);
+
+    color:#fff;
+
+    font-size:1.3rem;
+
+    flex-shrink:0;
+
+    transition:.4s;
+
+}
+
+.contact-icon:hover{
+
+    transform:rotate(10deg) scale(1.08);
+
+}
+
+
+
+#contact ul li{
+
+    transition:.3s;
+
+    padding:6px 0;
+
+}
+
+#contact ul li:hover{
+
+    transform:translateX(8px);
+
+    color:var(--bs-primary);
+
+}
+
+
+
+#contact .btn-outline-primary{
+
+    width:46px;
+
+    height:46px;
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    transition:.35s;
+
+}
+
+#contact .btn-outline-primary:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+#contact label{
+
+    font-weight:600;
+
+    color:#222;
+
+    margin-bottom:8px;
+
+}
+
+
+
+#contact .input-group-text{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    border:none;
+
+}
+
+#contact .form-control,
+
+#contact .form-select{
+
+    border-radius:10px;
+
+    border:2px solid #e9ecef;
+
+    padding:12px 15px;
+
+    transition:.35s;
+
+    box-shadow:none;
+
+}
+
+
+
+
+#contact .form-control:focus,
+
+#contact .form-select:focus{
+
+    border-color:#0d6efd;
+
+    box-shadow:0 0 0 .2rem rgba(13,110,253,.15);
+
+}
+
+
+.valid-field{
+
+    border:2px solid #198754 !important;
+
+}
+
+.invalid-field{
+
+    border:2px solid #dc3545 !important;
+
+    animation:shake .35s;
+
+}
+
+@keyframes shake{
+
+0%{transform:translateX(0);}
+
+25%{transform:translateX(-4px);}
+
+50%{transform:translateX(4px);}
+
+75%{transform:translateX(-4px);}
+
+100%{transform:translateX(0);}
+
+}
+
+
+
+
+#submitBtn{
+
+    border-radius:50px;
+
+    padding:15px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+    transition:.35s;
+
+}
+
+#submitBtn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(13,110,253,.35);
+
+}
+
+#charCount{
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+::placeholder{
+
+    color:#adb5bd !important;
+
+}
+
+
+
+/* Smooth transitions for all form controls */
+#contact .form-control,
+#contact .form-select,
+#contact .btn,
+.contact-icon{
+    transition: all .35s ease;
+}
+
+/* Textarea resize control */
+#message{
+    resize: vertical;
+    min-height: 180px;
+}
+
+/* Better select arrow spacing */
+#contact .form-select{
+    cursor: pointer;
+}
+
+/* Softer card body spacing on smaller screens */
+@media (max-width:576px){
+    #contact .card-body{
+        padding:2rem 1.5rem;
+    }
+}
+
+
+@media(max-width:991px){
+
+#contact .card{
+
+margin-bottom:20px;
+
+}
+
+#contact h2{
+
+font-size:2.2rem;
+
+}
+
+}
+
+@media(max-width:768px){
+
+#contact{
+
+padding:80px 0;
+
+}
+
+#contact h2{
+
+font-size:2rem;
+
+}
+
+.contact-icon{
+
+width:50px;
+
+height:50px;
+
+font-size:1rem;
+
+}
+
+#submitBtn{
+
+width:100%;
+
+}
+
+}
+
+
+
+
 /*==========================================================
         BACK TO TOP RESPONSIVE
 ==========================================================*/
@@ -3690,6 +4053,7 @@ transition-delay:.7s;
 }
 
 }
+<<<<<<< HEAD
 @media (max-width: 768px) {
     .project-grid-custom,
     .skills-container-custom,
@@ -3706,4 +4070,125 @@ transition-delay:.7s;
     .section-title{
         font-size:2rem;
     }
+=======
+
+
+
+
+
+/*==========================================================
+                BACK TO TOP BUTTON
+==========================================================*/
+
+.back-to-top{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#ffffff;
+
+    font-size:1.6rem;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:var(--shadow-md);
+
+    opacity:0;
+
+    /*visibility:hidden;*/
+
+    transform:translateY(30px);
+
+    transition:.4s;
+
+    z-index:999;
+
+}
+
+/*-----------------------------------
+        Show Button
+------------------------------------*/
+
+.back-to-top.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+/*-----------------------------------
+        Hover Effect
+------------------------------------*/
+
+.back-to-top:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/*-----------------------------------
+        Icon Animation
+------------------------------------*/
+
+.back-to-top i{
+
+    transition:.3s;
+
+}
+
+.back-to-top:hover i{
+
+    transform:translateY(-4px);
+
+}
+
+/*==========================================================
+        BACK TO TOP RESPONSIVE
+==========================================================*/
+
+@media(max-width:768px){
+
+.back-to-top{
+
+    width:48px;
+
+    height:48px;
+
+    right:18px;
+
+    bottom:18px;
+
+    font-size:1.4rem;
+
+}
+
+>>>>>>> 6c8bee4 (remove temporary folder hide)
 }
