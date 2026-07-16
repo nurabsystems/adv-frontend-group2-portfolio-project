@@ -34,74 +34,6 @@
     --transition:.35s ease;
 
 }
-/*==============================
-        DARK/LIGHT MODE
-===============================*/
-
-body{
-    transition: background .4s,color .4s;
-}
-
-.theme-toggle{
-    width:45px;
-    height:45px;
-    border:none;
-    border-radius:50%;
-    background:var(--primary);
-    color:#fff;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.theme-toggle:hover{
-    transform:rotate(180deg);
-}
-
-/* DARK MODE */
-
-body.dark-mode{
-    background:#0f172a;
-    color:#fff;
-}
-
-body.dark-mode .navbar,
-body.dark-mode .offcanvas,
-body.dark-mode .service-card,
-body.dark-mode .technology-card,
-body.dark-mode .project-card-custom,
-body.dark-mode .skill-card-custom,
-body.dark-mode .testimonial-card-custom,
-body.dark-mode .contact-form,
-body.dark-mode .contact-info{
-
-    background:#1e293b;
-    color:#fff;
-}
-
-body.dark-mode p{
-    color:#cbd5e1;
-}
-
-body.dark-mode .nav-link,
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode h4,
-body.dark-mode h5{
-    color:#fff;
-}
-
-body.dark-mode input,
-body.dark-mode textarea{
-    background:#334155;
-    color:white;
-    border-color:#475569;
-}
-
-body.dark-mode .services-section,
-body.dark-mode .contact-section{
-    background:#0f172a;
-}
 
 /*==============================
             RESET
@@ -875,14 +807,6 @@ img{
 }
 
 /*============================*/
-/*==============================
-    UNIFIED HEADING SIZE
-    (matches .section-title's 2.8rem)
-===============================*/
-.section-title-match{
-    font-size:2.8rem;
-    font-weight:700;
-}
 
 
 
@@ -2151,7 +2075,7 @@ transition-delay:.7s;
 
 .project-grid-custom {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 28px;
 }
 
@@ -2259,7 +2183,7 @@ transition-delay:.7s;
 
 .skills-container-custom {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
 }
 
@@ -2335,9 +2259,10 @@ transition-delay:.7s;
 
 .testimonial-grid-custom {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 24px;
 }
+
 .testimonial-card-custom {
     background: #fff;
     border: 1px solid #e2e8f0;
@@ -4053,24 +3978,6 @@ width:100%;
 }
 
 }
-<<<<<<< HEAD
-@media (max-width: 768px) {
-    .project-grid-custom,
-    .skills-container-custom,
-    .testimonial-grid-custom {
-        grid-template-columns: 1fr;
-    }
-}
-@media(max-width:768px){
-    .section-title-match{
-        font-size:2rem;
-    }
-}
-@media(max-width:768px){
-    .section-title{
-        font-size:2rem;
-    }
-=======
 
 
 
@@ -4190,5 +4097,4 @@ width:100%;
 
 }
 
->>>>>>> 6c8bee4 (remove temporary folder hide)
 }
