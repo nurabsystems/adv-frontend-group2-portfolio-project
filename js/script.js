@@ -18,10 +18,10 @@ JavaScript (ES6)
 
 Team Members
 ------------
-1. Nurudeen Abdulsalam
+1. Nurudeen 
 2. Phamous
 3. Zavirah
-4. ______________________
+4. Furtune
 
 Version
 -------
@@ -82,6 +82,8 @@ function initializeWebsite() {
     initializeTechnologyCards();
 
     animateCounter();
+
+    revealCustomOnScroll();
 
 }
 
@@ -352,3 +354,23 @@ function initializeTechnologyCards() {
 }
 
 
+/* ==========================================
+        SCROLL REVEAL - Custom Sections
+=========================================== */
+
+const customRevealEls = document.querySelectorAll(
+    ".project-card-custom, .skill-card-custom, .testimonial-card-custom"
+);
+
+customRevealEls.forEach(el => el.classList.add("fade-up-custom"));
+
+function revealCustomOnScroll() {
+    customRevealEls.forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+            el.classList.add("active-custom");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealCustomOnScroll);
+revealCustomOnScroll();
