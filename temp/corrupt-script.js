@@ -77,6 +77,10 @@ function initializeWebsite() {
 
   animateCounters();
 
+    initializeDarkMode();
+
+    initializeProjectSearch();
+
   revealCustomOnScroll();
 }
 
@@ -241,18 +245,40 @@ function animateCounters() {
         if (entry.isIntersecting) {
           animateCounter(entry.target);
 
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.5,
-    },
-  );
 
-  counters.forEach(function (counter) {
-    observer.observe(counter);
-  });
+
+function animateCounter(){
+
+    const counters = document.querySelectorAll(".counter");
+
+    counters.forEach(function (counter) {
+
+        const target = +counter.dataset.target;
+
+        let current = 0;
+
+        const increment = target / 100;
+
+        const update = () => {
+
+            current += increment;
+
+            if (current < target) {
+
+                counter.innerText = Math.floor(current);
+
+                requestAnimationFrame(update);
+
+            } else {
+
+                counter.innerText = target;
+
+            }
+        };
+
+        update();
+
+    });
 }
 
 function animateCounter(counter) {
@@ -330,6 +356,52 @@ function revealCustomOnScroll() {
 window.addEventListener("scroll", revealCustomOnScroll);
 revealCustomOnScroll();
 
+function initializeDarkMode() {
+
+    const buttons = document.querySelectorAll(".theme-toggle");
+
+    if (buttons.length === 0) return;
+
+    function syncIcons(isDark) {
+
+        buttons.forEach(function (btn) {
+
+            const icon = btn.querySelector("i");
+
+            if (!icon) return;
+
+            if (isDark) {
+                icon.classList.replace("bi-brightness-high-fill", "bi-moon-stars-fill");
+            } else {
+                icon.classList.replace("bi-moon-stars-fill", "bi-brightness-high-fill");
+            }
+
+        });
+
+    }
+
+    if (localStorage.getItem("theme") === "dark") {
+
+        document.body.classList.add("dark-mode");
+
+        syncIcons(true);
+
+    }
+
+    buttons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            document.body.classList.toggle("dark-mode");
+
+            const isDark = document.body.classList.contains("dark-mode");
+
+            syncIcons(isDark);
+
+            localStorage.setItem("theme", isDark ? "dark" : "light");
+
+        });
+
 
 
 /*==========================================================
@@ -374,6 +446,45 @@ if (alertBox) {
 
 }
 
+function initializeProjectSearch(){
+
+    const search=document.getElementById("projectSearch");
+
+    if(!search) return;
+
+    const cards=document.querySelectorAll(".project-card-custom");
+
+    const noProjects=document.getElementById("noProjects");
+
+    search.addEventListener("input",function(){
+
+        const value=this.value.toLowerCase();
+
+        let found=false;
+
+        cards.forEach(card=>{
+
+            const text=card.innerText.toLowerCase();
+
+            if(text.includes(value)){
+
+                card.style.display="block";
+
+                found=true;
+
+            }else{
+
+                card.style.display="none";
+
+            }
+
+        });
+
+        noProjects.style.display=found?"none":"block";
+
+    });
+
+}
 
 function initializeContactForm() {
   const form = document.getElementById("contactForm");
