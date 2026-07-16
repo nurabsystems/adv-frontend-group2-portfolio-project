@@ -34,6 +34,74 @@
     --transition:.35s ease;
 
 }
+/*==============================
+        DARK/LIGHT MODE
+===============================*/
+
+body{
+    transition: background .4s,color .4s;
+}
+
+.theme-toggle{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:var(--primary);
+    color:#fff;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.theme-toggle:hover{
+    transform:rotate(180deg);
+}
+
+/* DARK MODE */
+
+body.dark-mode{
+    background:#0f172a;
+    color:#fff;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .offcanvas,
+body.dark-mode .service-card,
+body.dark-mode .technology-card,
+body.dark-mode .project-card-custom,
+body.dark-mode .skill-card-custom,
+body.dark-mode .testimonial-card-custom,
+body.dark-mode .contact-form,
+body.dark-mode .contact-info{
+
+    background:#1e293b;
+    color:#fff;
+}
+
+body.dark-mode p{
+    color:#cbd5e1;
+}
+
+body.dark-mode .nav-link,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5{
+    color:#fff;
+}
+
+body.dark-mode input,
+body.dark-mode textarea{
+    background:#334155;
+    color:white;
+    border-color:#475569;
+}
+
+body.dark-mode .services-section,
+body.dark-mode .contact-section{
+    background:#0f172a;
+}
 
 /*==============================
             RESET

@@ -176,7 +176,9 @@
               <a href="#contact" class="btn btn-primary rounded-pill px-4">
                 Hire Us
               </a>
-            </li>
+              <button id="themeToggle" class="theme-toggle">
+              <i class="bi bi-brightness-high-fill"></i>
+              </button>
           </ul>
         </div>
       </div>
@@ -211,6 +213,10 @@
 
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
+
+         <button class="theme-toggle mt-3">
+          <i class="bi bi-brightness-high-fill"></i>
+        </button>
 
         <a href="#contact" class="btn btn-primary w-100 mt-4">
           Start a Project
@@ -732,6 +738,18 @@
       <!-- ==========================================
         FEATURED PROJECTS
 =========================================== -->
+<div class="project-search mb-5">
+    <input
+        type="text"
+        id="projectSearch"
+        class="form-control"
+        placeholder="Search projects..."
+    >
+</div>
+
+<p id="noProjects" style="display:none;text-align:center;">
+    No projects found.
+</p>
 
 <section id="projects" class="py-5 bg-light">
     <div class="container">
