@@ -4153,3 +4153,186 @@ body.dark-mode .team-card p,
 body.dark-mode .team-card .text-muted {
     color: #cbd5e1 !important;
 }
+/*==========================================================
+                DARK MODE STYLES
+==========================================================*/
+
+body.dark-mode .text-muted,
+body.dark-mode small {
+    color: #94a3b8 !important;
+}
+
+body.dark-mode p {
+    color: #cbd5e1 !important;
+}
+body.dark-mode .bg-light {
+    background: #1e293b !important;
+    color: #fff !important;
+}
+body.dark-mode .hero-stats {
+    background: #1e293b !important;
+}
+
+body.dark-mode .stat-box h3 {
+    color: #38bdf8 !important;
+}
+
+body.dark-mode .stat-box span {
+    color: #cbd5e1 !important;
+}
+body.dark-mode .skill-card-custom {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+}
+
+body.dark-mode .skill-card-custom span {
+    color: #fff !important;
+}
+body.dark-mode .team-card {
+    background: #1e293b !important;
+}
+
+body.dark-mode .team-card .text-primary {
+    color: #38bdf8 !important;
+}
+
+body.dark-mode .team-card p,
+body.dark-mode .team-card .text-muted {
+    color: #cbd5e1 !important;
+}
+
+body.dark-mode #contact,
+body.dark-mode .bg-light {
+    background: #0f172a !important;
+}
+
+body.dark-mode .card,
+body.dark-mode #contact .card {
+    background: #1e293b !important;
+}
+
+body.dark-mode #contact .form-control,
+body.dark-mode #contact .form-select {
+    background: #334155 !important;
+    color: #fff !important;
+    border-color: #475569 !important;
+}
+
+body.dark-mode #contact .text-muted,
+body.dark-mode #contact label {
+    color: #cbd5e1 !important;
+}
+
+/*==============================
+        THEME TOGGLE BUTTON
+===============================*/
+.theme-toggle{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+    color:#fff;
+    font-size:1.1rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.theme-toggle:hover{
+    transform:translateY(-3px);
+    box-shadow:var(--shadow-md);
+}
+
+body.dark-mode .theme-toggle{
+    background:#1e293b;
+    color:#38bdf8;
+}
+
+body.dark-mode .testimonial-card-custom{
+    background:#1e293b !important;
+    border-color:#334155 !important;
+}
+
+body.dark-mode .testimonial-card-custom p{
+    color:#cbd5e1 !important;
+}
+
+body.dark-mode .testimonial-author-custom h4{
+    color:#fff !important;
+}
+
+body.dark-mode .testimonial-author-custom span{
+    color:#38bdf8 !important;
+}
+
+body.dark-mode .project-card-custom{
+    background:#1e293b !important;
+    border-color:#334155 !important;
+}
+
+body.dark-mode .project-info-custom h3{
+    color:#fff !important;
+}
+
+body.dark-mode .project-info-custom p{
+    color:#cbd5e1 !important;
+}
+
+/*==============================
+    DARK MODE - BASE PAGE
+===============================*/
+body.dark-mode{
+    background:#0f172a !important;
+    color:#cbd5e1 !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6{
+    color:#fff !important;
+}
+
+body.dark-mode section{
+    background:transparent;
+}
+
+body.dark-mode .navbar{
+    background:#0f172a !important;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+body.dark-mode .navbar-brand,
+body.dark-mode .nav-link{
+    color:#fff !important;
+}
+
+body.dark-mode .logo-blue{
+    color:#38bdf8 !important;
+}
+
+body.dark-mode .offcanvas{
+    background:#0f172a !important;
+    color:#cbd5e1 !important;
+}
+
+body.dark-mode .offcanvas-header h5{
+    color:#fff !important;
+}
+
+body.dark-mode .offcanvas .nav-link{
+    color:#cbd5e1 !important;
+}
+
+body.dark-mode .offcanvas .btn-close{
+    filter:invert(1);
+}
